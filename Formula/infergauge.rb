@@ -5,7 +5,7 @@
 class Infergauge < Formula
   desc "AI performance testing - load, stress, spike and endurance tests for LLM endpoints"
   homepage "https://infergauge.dev"
-  version "0.7.0"
+  version "0.7.3"
   license "BUSL-1.1"
 
   on_macos do
