@@ -10,8 +10,8 @@ class Infergauge < Formula
 
   on_macos do
     on_arm do
-      url "{{macos-arm64_url}}"
-      sha256 "{{macos-arm64_sha}}"
+      url "https://github.com/Nexus-InferGauge/infergauge/releases/download/v0.7.0/infergauge-v0.7.0-macos-arm64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     on_intel do
       url "{{macos-x86_64_url}}"
@@ -20,8 +20,8 @@ class Infergauge < Formula
   end
 
   on_linux do
-    url "{{linux-x86_64_url}}"
-    sha256 "{{linux-x86_64_sha}}"
+    url "https://github.com/Nexus-InferGauge/infergauge/releases/download/v0.7.0/infergauge-v0.7.0-linux-x86_64.tar.gz"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
 
   def install
