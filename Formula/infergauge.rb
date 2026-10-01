@@ -5,15 +5,15 @@
 class Infergauge < Formula
   desc "AI performance testing - load, stress, spike and endurance tests for LLM endpoints"
   homepage "https://infergauge.com"
-  version "0.9.4"
+  version "1.0.0"
   license "BUSL-1.1"
 
   # Apple Silicon only - GitHub's Intel macOS runner fleet has been drawn
   # down to where those release builds can no longer be scheduled at all.
   on_macos do
     on_arm do
-      url "https://github.com/Nexus-InferGauge/infergauge-releases/releases/download/v0.9.4/infergauge-v0.9.4-macos-arm64.tar.gz"
-      sha256 "c1a1431642663f92b9a057037f41170744533caa9599f37794182018dd7f358b"
+      url "https://github.com/Nexus-InferGauge/infergauge-releases/releases/download/v1.0.0/infergauge-v1.0.0-macos-arm64.tar.gz"
+      sha256 "0e19f2394dcb66da0de10e83772bb3516d4542535565e02a82ab059aaefc88d2"
     end
     on_intel do
       odie "InferGauge no longer ships an Intel macOS build. " \
@@ -22,8 +22,8 @@ class Infergauge < Formula
   end
 
   on_linux do
-    url "https://github.com/Nexus-InferGauge/infergauge-releases/releases/download/v0.9.4/infergauge-v0.9.4-linux-x86_64.tar.gz"
-    sha256 "a26dd25f5e246b05474c3466bbe7e421da188979a35920c4f53c221b97727560"
+    url "https://github.com/Nexus-InferGauge/infergauge-releases/releases/download/v1.0.0/infergauge-v1.0.0-linux-x86_64.tar.gz"
+    sha256 "fcc48bb47c48ba7c3eef943c8f9cfe83195ff994da02697b94478f86d8c04b03"
   end
 
   def install
